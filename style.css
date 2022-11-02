@@ -197,7 +197,8 @@ body.scroll-down .nav__logo-orange{
     cursor: pointer;
     position: relative;
 }
-.nav__links li a::before{
+.nav__links li a::before,
+.contact__header--nav a::before{
     position: absolute;
     content: '';
     left: 50%;
@@ -211,7 +212,8 @@ body.scroll-down .nav__logo-orange{
     -o-transition: all .3s linear;
     transition: all .3s linear;
 }
-.nav__links li a:hover::before{
+.nav__links li a:hover::before,
+.contact__header--nav a:hover::before{
     left: 0;
     width: 100%;
 }
@@ -689,11 +691,11 @@ header{
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .price-menu__btn:active{
-    transform: translateY(5px);
     -webkit-transform: translateY(5px);
     -moz-transform: translateY(5px);
     -ms-transform: translateY(5px);
     -o-transform: translateY(5px);
+    transform: translateY(5px);
 }
 .price-menu hr{
     display: block;
@@ -1289,6 +1291,7 @@ footer .newsletter{
 .contact__header--nav a{
     color: var(--white);
     text-decoration: none;
+    position: relative;
 }
 .contact__header--nav i{
     font-size: 0.625rem;
@@ -1319,17 +1322,20 @@ footer .newsletter{
     -o-transition: all .3s linear;
     transition: all .3s linear;
 }
-.contact__grid:nth-child(1){
-    transition-delay: .2s;
-}
-.contact__grid:nth-child(2){
-    transition-delay: .4s;
-}
-.contact__grid:nth-child(3){
-    transition-delay: .6s;
-}
+.contact__grid:nth-child(1){ transition-delay: .2s;}
+.contact__grid:nth-child(2){ transition-delay: .4s;}
+.contact__grid:nth-child(3){ transition-delay: .6s;}
 .contact__grid:hover{
-    background: var(--cta);
+    animation: changeBg .3s linear forwards;
+    -webkit-animation: changeBg .3s linear forwards;
+}
+@keyframes changeBg{
+    0%{
+        background: var(--white);
+    }
+    100%{
+        background: var(--cta);
+    }
 }
 .contact__grid .fa-solid{
     color: var(--cta);
