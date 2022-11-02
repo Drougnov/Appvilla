@@ -24,7 +24,7 @@ Appvilla is a multi-page landing website with some cool features like animation 
 
 ### Links
 
-- Live Site URL: [https://drougnov.github.io/Appvilla/](https://drougnov.github.io/Appvilla/)
+- Live Site URL: [https://github.com/Drougnov/Appvila](https://github.com/Drougnov/Appvila)
 
 ## My process
 
@@ -60,3 +60,7 @@ Appvilla is a multi-page landing website with some cool features like animation 
 ## Acknowledgments
 
 If you have any suggestions following this project or anything else, please let me know. Have a good day :)
+
+### Note
+
+The first uploaded Appvilla repository had a git issue of 'git:fatal:cannot resolve HEAD'. This is the copy paste of that repository
