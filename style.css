@@ -36,6 +36,9 @@ body.active{
 }
 
 
+/* ----------==========preloader==========---------- */
+
+
 .preloader{
     position: absolute;
     top: 0;
@@ -86,8 +89,12 @@ body.active{
         -ms-transform: scale(1,1);
         -o-transform: scale(1,1);
         transform: scale(1,1);
+    }
 }
-}
+
+
+/* ----------==========scroll-to-top==========---------- */
+
 
 .go-top{
     position: fixed;
@@ -117,6 +124,9 @@ body.active{
     background: var(--dark-black);
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
+
+
+/* ----------==========nav==========---------- */
 
 
 nav{
@@ -230,6 +240,8 @@ body.scroll-down .nav__links li .header-link.active{
     display: none;
 }
 
+/* ----------hamburger---------- */
+
 .nav__menu{
     width: 2rem;
     height: 1.375rem;
@@ -320,6 +332,9 @@ body.scroll-down .hamburger::after{
 }
 
 
+/* ----------==========header==========---------- */
+
+
 header{
     color: var(--white);
     background: var(--cta);
@@ -406,6 +421,9 @@ header{
 .install__link a i{
     font-size: 1.125rem;
 }
+
+
+/* ----------==========features==========---------- */
 
 
 .features,
@@ -523,6 +541,9 @@ header{
 }
 
 
+/* ----------==========overview==========---------- */
+
+
 .overview{
     padding-top: 3rem;
 }
@@ -611,6 +632,9 @@ header{
 .fact-flex__column p{
     font-weight: 500;
 }
+
+
+/* ----------==========pricing==========---------- */
 
 
 .pricing{
@@ -727,6 +751,9 @@ header{
 }
 
 
+/* ----------==========team==========---------- */
+
+
 .team{
     font-size: 0.875rem;
     padding: 3rem .75rem;
@@ -797,6 +824,10 @@ header{
 .stuff__info--links a:hover{
     color: var(--cta);
 }
+
+
+/* ----------==========testimonial-slider==========---------- */
+
 
 .testimonial__pattern{
     display: none;
@@ -872,6 +903,9 @@ header{
 }
 
 
+/* ----------==========install==========---------- */
+
+
 .install{
     color: var(--white);
     background: var(--cta);
@@ -889,6 +923,9 @@ header{
 .install__link.fadeFromTop{
     transition-delay: .7s;
 }
+
+
+/* ----------==========faq-accordion==========---------- */
 
 
 .faq{
@@ -994,6 +1031,9 @@ details .answer{
         transform: translateY(0);
     }
 }
+
+
+/* ----------==========blogs==========---------- */
 
 
 .blogs{
@@ -1102,6 +1142,9 @@ details .answer{
 }
 
 
+/* ----------==========clients-slider==========---------- */
+
+
 .clients{
     padding: 2.5rem .75rem;
 }
@@ -1119,6 +1162,9 @@ details .answer{
     align-items: center;
     width: 80%;
 }
+
+
+/* ----------==========footer==========---------- */
 
 
 footer{
@@ -1213,6 +1259,7 @@ footer{
 .footer__grid--list li a:hover{
     color: var(--cta);
 }
+/* ----------newsletter---------- */
 footer .newsletter{
     display: flex;
     flex-direction: column;
@@ -1273,6 +1320,8 @@ footer .newsletter{
 }
 
 
+/* ----------==========contact-page==========---------- */
+
 
 .contact__header{
     gap: .5rem;
@@ -1296,6 +1345,9 @@ footer .newsletter{
 .contact__header--nav i{
     font-size: 0.625rem;
 }
+
+/* ----------contact-grid---------- */
+
 .contact{
     padding: 3rem .75rem;
 }
@@ -1364,6 +1416,9 @@ footer .newsletter{
 .contact__grid:hover a{
     color: var(--white);
 }
+
+/* ----------support-text---------- */
+
 .support{
     width: 100%;
     color: var(--white);
@@ -1412,6 +1467,9 @@ footer .newsletter{
     gap: .5rem;
     margin-top: 1.5rem;
 }
+
+/* ----------support-form---------- */
+
 .support__form-container{
     background: var(--white);
     -webkit-border-radius: .5rem;
@@ -1473,12 +1531,20 @@ footer .newsletter{
 .support__form-container form button:hover{
     background: var(--dark-black);
 }
+
+/* ----------support-map---------- */
+
 .support__map{
     height: 300px;
 }
 .support__map iframe{
     height: 100%;
 }
+
+
+
+/* ----------==========media-queries==========---------- */
+
 
 
 @media(min-width: 750px){
@@ -1506,7 +1572,7 @@ footer .newsletter{
         -ms-transition: all .3s linear;
         -o-transition: all .3s linear;
         transition: all .3s linear;
-}
+    }
     .nav__cta:hover{
         color: var(--cta);
         background: var(--white);
@@ -1960,9 +2026,8 @@ footer .newsletter{
     .support__form-container form button{
         grid-column: 1/-1;
     }
-    
-
 }
+
 @media(min-width: 1250px){
     nav{
         padding: 1.5rem 5rem;
@@ -1973,6 +2038,8 @@ footer .newsletter{
     .nav__cta{
         font-size: 0.9375rem;
     }
+
+
     header{
         padding: 10rem 5rem 5rem 5rem;
     }
@@ -1982,6 +2049,8 @@ footer .newsletter{
     .header__text-link{
         gap: 1rem;
     }
+
+
     .features,
     .pricing,
     .team,
@@ -1998,24 +2067,32 @@ footer .newsletter{
     .blogs__text{
         max-width: 700px;
     }
+
+
     .overview-flex{
         padding: 0 5rem;
     }
     .overview-flex__text h2{
         font-size: 1.875rem;
     }
+
+
     .swiper1{
         max-width: 700px;
     }
     .swiper-wrapper .slide{
         max-width: 700px !important;
     }
+
+
     .install>*{
         max-width: 700px;
     }
     .install__link{
         gap: 1rem;
     }
+
+
     .contact{
         padding: 6rem 5rem;
     }
@@ -2030,9 +2107,11 @@ footer .newsletter{
     .nav__cta{
         font-size: 1rem;
     }
+
     header{
         padding: 10rem 7rem 5rem 7rem;
     }
+
     .features,
     .pricing,
     .team,
@@ -2042,14 +2121,21 @@ footer .newsletter{
     footer{
         padding: 6rem 7rem;
     }
+
     .overview-flex{
         gap: 3.5rem;
         padding: 0 7rem;
     }
+
     .support__text{
         padding: 8rem 3rem 8rem 7rem;
     }
 }
+
+
+
+/* ----------==========transtition-on-scroll==========---------- */
+
 
 
 .fadeFromLeft{
@@ -2073,8 +2159,6 @@ footer .newsletter{
     -o-transform: translateX(0);
     transform: translateX(0);
 }
-
-
 .fadeFromRight{
     opacity: 0;
     -webkit-transform: translateX(20px);
@@ -2096,7 +2180,6 @@ footer .newsletter{
     -o-transform: translateX(0);
     transform: translateX(0);
 }
-
 .fadeFromBottom{
     opacity: 0;
     -webkit-transform: translateY(-20px);
@@ -2118,7 +2201,6 @@ footer .newsletter{
     -o-transform: translateY(0);
     transform: translateY(0);
 }
-
 .fadeFromTop{
     opacity: 0;
     -webkit-transform: translateY(20px);
