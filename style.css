@@ -1378,8 +1378,8 @@ footer .newsletter{
 .contact__grid:nth-child(2){ transition-delay: .4s;}
 .contact__grid:nth-child(3){ transition-delay: .6s;}
 .contact__grid:hover{
-    animation: changeBg .3s linear forwards;
     -webkit-animation: changeBg .3s linear forwards;
+    animation: changeBg .3s linear forwards;
 }
 @keyframes changeBg{
     0%{
