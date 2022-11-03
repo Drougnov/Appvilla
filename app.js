@@ -1,3 +1,4 @@
+// preloader
 const body = document.body;
 const preloader = document.querySelector('.preloader');
 
@@ -7,6 +8,7 @@ window.addEventListener('load',()=>{
 })
 
 
+// nav toggler
 const nav = document.querySelector('nav');
 const toggleMenu = document.querySelector('.nav__menu')
 
@@ -15,6 +17,7 @@ toggleMenu.addEventListener('click',()=>{
 })
 
 
+// style navlink while on that specific section
 const links = document.querySelectorAll('.nav__links li a');
 const sections = document.querySelectorAll('.nav-section');
 
@@ -34,12 +37,11 @@ window.addEventListener('scroll', ()=>{
 })
 
 
-
-
+// Prevent from opening more than one question
 function handleAccordion(){
     let accordionOpened = document.querySelectorAll('details[open]')
     for(let item of accordionOpened){
-        if(this !=item){
+        if(this != item){
             item.removeAttribute("open");
         }
     }
@@ -50,6 +52,8 @@ accordions.forEach(accordion=>{
     accordion.addEventListener('click',handleAccordion);
 })
 
+
+//sliders
 const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
@@ -59,7 +63,6 @@ const swiper = new Swiper('.swiper', {
         disableOnInteraction: false
     },
 });
-
 
 const swiperOne = new Swiper('.swiper1', {
     direction: 'horizontal',
@@ -75,6 +78,8 @@ const swiperOne = new Swiper('.swiper1', {
     }
 });
 
+
+// Check if the user is scrolling down
 window.addEventListener('scroll', ()=>{
     const currentScroll = window.pageYOffset;
 
@@ -93,6 +98,7 @@ window.addEventListener('scroll', ()=>{
 })
 
 
+// Add transition on scrolls
 const fadeFromLeftElements = document.querySelectorAll('.fadeFromLeft');
 const observer = new IntersectionObserver(entries =>{
     entries.forEach(entry=>{
