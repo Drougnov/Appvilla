@@ -272,6 +272,9 @@ body.scroll-down .nav__links li .header-link.active{
 body.scroll-down .hamburger{
     background: var(--dark-black);
 }
+body.scroll-down .nav__active .hamburger{
+    background: transparent;
+}
 .hamburger::before,.hamburger::after{
     position: absolute;
     content: '';
