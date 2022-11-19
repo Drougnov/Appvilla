@@ -24,7 +24,7 @@ Appvilla is a multi-page landing website with some cool features like animation 
 
 ### Links
 
-- Live Site URL: [https://github.com/Drougnov/Appvila](https://github.com/Drougnov/Appvila)
+- Live Site URL: [https://drougnov.github.io/Appvilla/](https://drougnov.github.io/Appvilla/)
 
 ## My process
 
