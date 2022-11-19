@@ -208,7 +208,8 @@ body.scroll-down .nav__logo-orange{
     position: relative;
 }
 .nav__links li a::before,
-.contact__header--nav a::before{
+.contact__header--nav a::before,
+.blog__header--nav a::before{
     position: absolute;
     content: '';
     left: 50%;
@@ -223,7 +224,8 @@ body.scroll-down .nav__logo-orange{
     transition: all .3s linear;
 }
 .nav__links li a:hover::before,
-.contact__header--nav a:hover::before{
+.contact__header--nav a:hover::before,
+.blog__header--nav a:hover::before{
     left: 0;
     width: 100%;
 }
@@ -1326,26 +1328,31 @@ footer .newsletter{
 /* ----------==========contact-page==========---------- */
 
 
-.contact__header{
+.contact__header,
+.blog__header{
     gap: .5rem;
     font-size: 0.875rem;
     font-weight: 500;
 }
-.contact__header h1{
+.contact__header h1,
+.blog__header h1{
     font-size: 1.563rem;
 }
-.contact__header--nav{
+.contact__header--nav,
+.blog__header--nav{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: .75rem;
 }
-.contact__header--nav a{
+.contact__header--nav a,
+.blog__header--nav a{
     color: var(--white);
     text-decoration: none;
     position: relative;
 }
-.contact__header--nav i{
+.contact__header--nav i,
+.blog__header--nav i{
     font-size: 0.625rem;
 }
 
@@ -1734,7 +1741,8 @@ footer .newsletter{
     }
 
 
-    .contact__header h1{
+    .contact__header h1,
+    .blog__header h1{
         font-size: 1.75rem;
     }
     .contact,
@@ -1972,12 +1980,14 @@ footer .newsletter{
     }
 
 
-    .contact__header{
+    .contact__header,
+    .blog__header{
         flex-direction: column;
         gap: 1rem;
         padding: 12rem 3rem 6rem 3rem;
     }
-    .contact__header h1{
+    .contact__header h1,
+    .blog__header h1{
         font-size: 2rem;
     }
     .contact{
