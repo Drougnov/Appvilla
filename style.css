@@ -1978,6 +1978,13 @@ footer .newsletter{
     .support__text h2{
         font-size: 1.563rem;
     }
+    .blog__main-left{
+        padding: 3rem 1.5rem;
+    }
+    .blog__main-left .blogs__grid{
+        grid-template-columns: repeat(auto-fill, minmax(296px, 348px));
+        gap: 1.5rem;
+    }
 }
 
 
