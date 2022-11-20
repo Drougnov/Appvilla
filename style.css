@@ -1663,6 +1663,52 @@ footer .newsletter{
     padding: .85rem;
 }
 
+/* ---popular feeds--- */
+
+.feeds .feed{
+    display: flex;
+    gap: 1.25rem;
+    text-decoration: none;
+}
+.feeds hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--light-gray);
+    margin: 1.5rem 0;
+}
+.feed__img{
+    min-width: 80px;
+    height: 80px;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    overflow: hidden;
+}
+.feed__img img{
+    width: 80px;
+    height: 100%;
+}
+.feed__text-category{
+    color: var(--gray);
+    font-size: 14px;
+    font-weight: 500;
+}
+.feed__text h3{
+    color: var(--dark-black);
+    font-size: 14px;
+    font-weight: 500;
+    margin: .5rem 0 .75rem 0;
+}
+.feed__text p{
+    color: var(--gray);
+    font-size: 13px;
+}
+.feed__text p i{
+    margin-right: .25rem;
+}
 
 /* ----------==========media-queries==========---------- */
 
