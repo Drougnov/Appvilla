@@ -1978,6 +1978,8 @@ footer .newsletter{
     .support__text h2{
         font-size: 1.563rem;
     }
+
+
     .blog__main-left{
         padding: 3rem 1.5rem;
     }
@@ -2269,6 +2271,28 @@ footer .newsletter{
     .support__form-container form button{
         grid-column: 1/-1;
     }
+
+
+    .blog__main{
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        padding: 6rem 3rem;
+    }
+    .blog__main-left{
+        width: 100%;
+        padding: 0;
+    }
+    .blog__main-left .blogs__grid{
+        grid-template-columns: 1fr 1fr;
+    }
+    .blog__main-right{
+        width: 100%;
+        height: max-content;
+        padding: 0;
+    }
+    .blog__main-right > *{
+        height: max-content;
+    }
 }
 
 @media(min-width: 1250px){
@@ -2336,7 +2360,8 @@ footer .newsletter{
     }
 
 
-    .contact{
+    .contact,
+    .blog__main{
         padding: 6rem 5rem;
     }
     .support__text{
@@ -2361,7 +2386,8 @@ footer .newsletter{
     .faq,
     .blogs,
     .clients,
-    footer{
+    footer,
+    .blog__main{
         padding: 6rem 7rem;
     }
 
