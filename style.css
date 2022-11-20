@@ -1669,6 +1669,15 @@ footer .newsletter{
     -o-border-radius: .3rem;
     outline: none;
     padding: .85rem;
+    cursor: pointer;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.search form button:hover{
+    background: var(--dark-black);
 }
 
 /* ---popular-feeds--- */
@@ -1699,16 +1708,26 @@ footer .newsletter{
     width: 80px;
     height: 100%;
 }
-.feed__text-category{
+.feed__text--category{
     color: var(--gray);
     font-size: 14px;
     font-weight: 500;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 .feed__text h3{
     color: var(--dark-black);
     font-size: 14px;
     font-weight: 500;
     margin: .5rem 0 .75rem 0;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
 }
 .feed__text p{
     color: var(--gray);
@@ -1716,6 +1735,10 @@ footer .newsletter{
 }
 .feed__text p i{
     margin-right: .25rem;
+}
+.feed__text--category:hover,
+.feed__text h3:hover{
+    color: var(--cta);
 }
 
 /* ---categories--- */
@@ -1732,6 +1755,15 @@ footer .newsletter{
     font-weight: 500;
     text-decoration: none;
     padding-top: 1rem;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.categories__list li:hover a{
+    color: var(--cta);
+    padding-left: .6rem;
 }
 .categories__list li:not(:last-child){
     border-bottom: 1px solid var(--light-gray);
@@ -1758,6 +1790,15 @@ footer .newsletter{
     -ms-border-radius: .4rem;
     -o-border-radius: .4rem;
     padding: .5rem 1rem;
+    transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    -o-transition: all .3s linear;
+}
+.tags__list li a:hover{
+    color: var(--white);
+    background: var(--cta);
 }
 
 /* ---help--- */
