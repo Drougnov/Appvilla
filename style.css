@@ -1553,6 +1553,49 @@ footer .newsletter{
 
 
 
+/* ----------==========blog-page==========---------- */
+
+
+.blog__main{
+    background: var(--light-white);
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* ----------blog__main-left---------- */
+
+.blog__main-left{
+    display: grid;
+    gap: 3rem;
+    padding: 3rem .75rem 0 .75rem;
+}
+.blog__main-left .pagination{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    row-gap: 1rem;
+}
+.pagination li a{
+    display: block;
+    font-size: 14px;
+    color: var(--dark-black);
+    background: var(--white);
+    text-decoration: none;
+    padding: .5rem 1.25rem;
+    border: 1px solid var(--light-gray);
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+}
+.pagination li a.page-active{
+    color: var(--white);
+    background: var(--cta);
+    border-color: transparent;
+}
+
 /* ----------==========media-queries==========---------- */
 
 
