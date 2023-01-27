@@ -39,7 +39,7 @@ Appvilla is a multi-page landing website with some cool features like animation 
 
 ### Continued development
 
-- Add blog page.
+- Add blog page.✔
 
 - Add contact page.✔
 
@@ -47,7 +47,7 @@ Appvilla is a multi-page landing website with some cool features like animation 
 
 ### Useful resources
 
-- [Uideck](https://preview.uideck.com/items/appvilla/)
+- [Uideck](https://preview.uideck.com/items/appvilla/) - The theme is copied from Uideck.
 - [stackOverFlow](https://stackoverflow.com/)
 - [Google](https://google.com)
 
